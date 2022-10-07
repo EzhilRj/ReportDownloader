@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Onboarding]" verbose="0">
+  <test thread-count="5" name=" InitiateEmployees(failed)" verbose="0">
+    <classes>
+      <class name="Baseclass.Setup">
+        <methods>
+          <include name="Chromedownload"/>
+          <include name="Startbrowser"/>
+          <include name="Closebrowser"/>
+        </methods>
+      </class> <!-- Baseclass.Setup -->
+    </classes>
+  </test> <!--  InitiateEmployees(failed) -->
+</suite> <!-- Failed suite [Onboarding] -->
