@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Onboarding" verbose="3">
+<suite name="RedipaeReportDownloader 1.1" thread-count="6" verbose="3">
 
-	<test name=" InitiateEmployees">
+	<test name="ReportsDownload" parallel="methods">
+		<parameter name="firstsheetname" value="Sheet1" />
+		<parameter name="Secondsheetname" value="Sheet2" />
+		<parameter name="Thirdsheetname" value="Sheet3" />
+		<parameter name="Fourthsheetname" value="Sheet4" />
+		<parameter name="Fifthsheetname" value="Sheet5" />
+		<parameter name="Sixthsheetname" value="Sheet6" />
 		<classes>
 			<class name="Baseclass.Setup" />
-			<methods>
-				<include name="Chromedownload"></include>
-			</methods>
+			<include name="Startbrowser1" />
+			<include name="startbrowser2" />
+			<include name="startbrowser3" />
+			<include name="startbrowser4" />
+			<include name="startbrowser5" />
+			<include name="startbrowser6" />
 		</classes>
 	</test>
 </suite>
